@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Itumeleng!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Intro Screen */
+    .intro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      z-index: 10;
+      animation: fadeOut 3s ease forwards 2s;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 650px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 { font-size: 2.5em; margin-bottom: 10px; }
+    p { font-size: 1.1em; margin-bottom: 15px; line-height: 1.6; }
+    .emoji { font-size: 3em; animation: bounce 1.5s infinite; }
+
+    @keyframes bounce {
+      0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .music { margin-top: 25px; }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #66a6ff;
+      color: white;
+      cursor: pointer;
+    }
+
+    .hidden { display: none; margin-top: 15px; }
+  </style>
+</head>
+<body>
+
+  <div class="intro">
+    Loading something special for you... 🎌✨
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="emoji">🎉🎂🎶</div>
+      <h1>Happy Birthday, Itumeleng! 🎉</h1>
+
+      <p>
+        Happy birthday to my soulmate 😭💙 (yes I’m still calling you that, deal with it). I don’t even know where to start because there’s actually so much I’ve been meaning to say.
+      </p>
+
+      <p>
+        First of all… did you EVER finish One Piece?? Be honest 💀 or are you still out here saying “I’m close” while sitting on episode 600.
+      </p>
+
+      <p>
+        I won’t lie… I really miss you. It’s been a whole year and that’s actually crazy to think about. Things just haven’t felt the same without you.
+      </p>
+
+      <p>
+        I miss our conversations, the random laughs, and just your presence in general. You really made things feel lighter without even trying.
+      </p>
+
+      <p>
+        And your photography?? It’s genuinely beautiful. You don’t just take pictures—you capture moments. It’s calm, creative, and honestly something really special about you.
+      </p>
+
+      <p>
+        I hope this year brings you happiness, growth, good music, and moments worth capturing. You deserve all of that.
+      </p>
+
+      <p>
+        And seriously… I hope we talk again soon. I miss my friend fr.
+      </p>
+
+      <p>
+        Happy Birthday again 🎂✨
+      </p>
+
+      <h3>🎌 Anime Vibes (One Piece & Naruto)</h3>
+      <div class="gallery">
+        <img src="https://images6.alphacoders.com/606/606263.jpg" />
+        <img src="https://images3.alphacoders.com/135/135625.jpg" />
+        <img src="https://images5.alphacoders.com/653/653007.jpg" />
+        <img src="https://images2.alphacoders.com/941/941898.jpg" />
+        <img src="https://images4.alphacoders.com/602/602553.jpg" />
+        <img src="https://images7.alphacoders.com/606/606284.jpg" />
+      </div>
+
+      <div class="music">
+        <h3>🎧 2026 Vibes Playlist</h3>
+        <ul>
+          <li>"Neon Dreams"</li>
+          <li>"Skyline Rhythm"</li>
+          <li>"Echoes of Tonight"</li>
+        </ul>
+        <audio controls autoplay loop>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <button onclick="document.getElementById('secret').style.display='block'">Click me 👀</button>
+      <div id="secret" class="hidden">
+        You really mean a lot to me. No matter how much time passes, that won’t change 💙
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
